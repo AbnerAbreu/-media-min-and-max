@@ -1,0 +1,48 @@
+body{
+    margin: 0;
+    grid-template-areas: 'nav nav nav nav'
+                        'header header header header'
+                        'section section section section'
+                        'footer footer footer footer';
+    display: grid ;
+    grid-template-rows: 20vh 30vh 60vh 40vh
+
+    }
+nav{
+    grid-area: nav;
+    background-color: grey;
+}  
+header{
+    grid-area: header;
+    background-color: aquamarine;
+
+}
+
+section{
+    grid-area: section;
+    background-color: blueviolet;
+
+}
+
+footer{
+    grid-area: footer;
+    background-color: red;
+
+
+}
+@media(min-width:768px){
+    body{
+        grid-template-areas: 'nav nav header header'
+                             'nav nav header header'
+                             'section section section section'
+                             'footer footer footer footer';
+    }
+}
+@media(min-width:1024px){
+    body{
+        grid-template-areas:'nav nav header header'
+                            'nav nav header header'
+                            'section section footer footer'
+                            'section section footer footer';}
+
+}
